@@ -7,8 +7,5 @@ use Illuminate\Support\Facades\File;
 
 Auth::routes();
 
-Route::get('/debug-files', function () {
-    $files = File::files(public_path('uploads'));
-    return response()->json($files);
-});
+
 

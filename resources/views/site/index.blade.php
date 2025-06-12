@@ -57,6 +57,7 @@
                             <td>{{ $file->title }}</td>
                             <td>{{ $file->size }}</td>
                             <td><a href="{{ route('cloud-project.view-file', $file->id) }}" class="btn btn-primary">View</a>
+                                <hr>
                                 <form class="d-inline" action="{{ route('cloud-project.delete-file', $file->id) }}"
                                     method="POST">
                                     @csrf @method('DELETE')
@@ -66,7 +67,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <th colspan="4" class="text-center">No Data Found.</th>
+                            <th colspan="5" class="text-center">No Data Found.</th>
                         </tr>
                     @endforelse
                 </tbody>

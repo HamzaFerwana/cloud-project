@@ -33,7 +33,7 @@
                 @endguest
             </div>
             <div class="d-flex align-items-center justify-content-center mb-5 flex-column gap-3">
-                <h1>Welcome To Cloud Project!</h1>
+                <h1>Welcome To Cloud Project123!</h1>
                 <div>
                     <a href="{{ route('cloud-project.index') }}" class="btn btn-sm btn-primary">Home</a>
                     <a href="{{ route('cloud-project.search-documents') }}" class="btn btn-sm btn-primary">Search In
